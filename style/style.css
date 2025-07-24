@@ -20,6 +20,7 @@
 .section-description{
     color: rgba(0,0,0,.5);
 }
+
 .badge{
    position: relative;
     width: 40%;
@@ -116,10 +117,30 @@ header{
         margin: 10px;
         margin-top: 50px;
     }
-    .flower-planets-img{
+    .flower-planets-img,.img-content{
         width: 100%;
     }
     .badge{
         display: none;
+    }
+    .img-content-ul{
+        margin-left: 20px;
+        
+    }
+}
+/* Latest  Deals section for mobile device */
+@media screen and (max-width:576px){
+    .deals-section{
+        margin: 10px;
+    }
+    .img-container {
+       grid-template-columns: repeat(1,1fr);
+       gap: 10px;
+       
+    }
+    .bg-img{
+        padding:80px 10px;
+        
+               
     }
 }
