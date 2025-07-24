@@ -139,8 +139,20 @@ header{
        
     }
     .bg-img{
-        padding:80px 10px;
-        
-               
+        padding:80px 10px;    
+    
+    }
+}
+/*  Join the colorful Bunch section for mobile device */
+@media screen and (max-width:576px){
+    .colorful-section{
+        padding:70px 10px;
+       
+    }
+    .input-sec{
+        padding:10px 5px 10px 5px;
+    }
+    .subscribe-btn{
+        padding: 10px;
     }
 }
