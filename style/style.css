@@ -156,3 +156,11 @@ header{
         padding: 10px;
     }
 }
+/* footer section for mobile device */
+@media screen and (max-width:576px){
+    footer{
+        flex-direction: column;
+        margin: 30px;
+        gap: 30px;
+    }
+}
