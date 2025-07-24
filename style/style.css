@@ -1,9 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles */
+.section-description{
+    color: rgba(0,0,0,.5);
+}
 .badge{
    position: relative;
     width: 40%;
     top: -720px;
     left: 400px;
 
+}
+/* header styles */
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+/* nav styles */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    gap: 70px;
+}
+.nav-item li{
+    color: #8987A1;
+}
+.nav-item li:first-child{
+    color: #111;
+}
+.nav-item li:last-child{
+    color: #111;
+}
+/* banner section styles */
+.banner-section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 150px;
+
+}
+.banner-content{
+    width: 50%;
+}
+.banner-section-title{
+    font-size: 60px;
+    font-weight: bold;
+    width: 100%;
+}
+/* header for mobile device */
+@media screen and (max-width:576px) {
+    
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .nav-item .home, .shop, .about{
+        display: none;
+    }
+    .banner-section{
+        margin-top: 10px;
+    }
+    .banner-content,.nav{
+        width: 90%;
+        margin: 20px;
+    }
+    .banner-section-title{
+        font-size: 30px;
+    }
+}
+/*our-planets section for mobile device*/
+
+@media screen and (max-width:576px) {
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+        margin: 10px;
+        gap: 10px;
+        
+
+    }
+    .section-description{
+        width: 100%;
+       
+    }
+    .btn-primary{
+        padding: 10px 40px;
+    }
+}
+/* Flower & Plants Lover for mobile device */
+@media screen and (max-width:576px){
+    .flower-plants-section{
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 50px;
+    }
+    .flower-planets-img{
+        width: 100%;
+    }
+    .badge{
+        display: none;
+    }
 }
